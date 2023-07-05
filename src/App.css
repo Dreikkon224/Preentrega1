@@ -12,10 +12,27 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.navegador{
+  background-color: rgb(193, 223, 223);
+  display: flex;
+  flex-direction: column;
+}
+.barra-navegacion{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 14px 0px 14px 0px;
+}
 .carrito{
-  height: 81px;
-  width: 151px;
+  display: flex;
+}
+.img{
+  height: 28px;
+  width: 52px;
 }
 .App-header {
   background-color: #282c34;

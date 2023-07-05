@@ -2,14 +2,18 @@ import CartWidget from "../CartWidget/CartWidget"
 
 const NavBar = () => {
     return (
-        <nav>
-            <h1>Carrito</h1>
-            <div>
-                <button>Mangas</button>
-                <button>Accesorios</button>
-                <button>Figuras</button>
+        <nav className="navegador">
+            <div> 
+                <h1>ByFan</h1>
+                <ul className="barra-navegacion">
+                    <li><a>Home</a></li>
+                    <li><a>Mangas</a></li>
+                    <li><a>Cosplays</a></li>
+                    <li><a>Accesorios</a></li>
+                </ul>
+                <div><CartWidget/></div>
             </div>
-            <CartWidget/>
+            
         </nav>
     )
 }
