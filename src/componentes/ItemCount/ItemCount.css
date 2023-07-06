@@ -1,0 +1,9 @@
+.controls{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.number{
+    padding-left: 20px;
+    padding-right: 20px;
+}

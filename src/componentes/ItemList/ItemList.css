@@ -1,0 +1,16 @@
+.ListGroup{
+    display: flex;
+    justify-content: space-around;
+}
+.CardItem{
+    background: radial-gradient(circle, rgba(55,132,247,1) 0%, rgba(144,8,231,1) 100%);
+    border-radius: 26px;
+}
+.Header{
+    padding: 10px 10px 0px 10px;
+}
+.itemImg{
+    margin: 18px;
+    width: 281px;
+    height: 361px;
+}

@@ -18,15 +18,15 @@
   list-style: none;
 }
 .navegador{
-  background-color: rgb(193, 223, 223);
-  display: flex;
-  flex-direction: column;
+  background: linear-gradient(357deg, rgba(7,0,36,1) 0%, rgba(121,9,9,1) 35%, rgba(0,212,255,1) 100%);
 }
-.barra-navegacion{
+.categorias{
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+    justify-content: space-evenly;
   padding: 14px 0px 14px 0px;
 }
+
 .carrito{
   display: flex;
 }

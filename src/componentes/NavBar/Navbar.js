@@ -8,9 +8,9 @@ const NavBar = () => {
                 <h3>ByFan</h3>
             </Link>
             <div className="categorias">
-                <NavLink to={'/category/mangas'} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Mangas</NavLink>
+                <NavLink to={'/category/manga'} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Mangas</NavLink>
                 <NavLink to={'/category/cosplay'} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Cosplays</NavLink>
-                <NavLink to={'/category/accessories'} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Accesorios</NavLink>
+                <NavLink to={'/category/accesorio'} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Accesorios</NavLink>
             </div>
             <CartWidget/>
         </nav>

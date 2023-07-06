@@ -1,15 +1,16 @@
+import './ItemDetail.css'
 import ItemCount from '../ItemCount/ItemCount'
 
 const ItemDetail = ({id, name, img, category, description, price, stock}) =>{
     return(
-        <article className='cardItem'>
-            <header className='header'>
+        <article className='CardItem'>
+            <header className='Header'>
                 <h2 className='ItemHeader'>
                     {name}
                 </h2>
             </header>
             <picture>
-                <img src={img} alt={name} className='ItemImg'/>
+                <img src={img} alt={name} className='itemImg'/>
             </picture>
             <section>
                 <p className='Info'>categoria: {category}</p>
