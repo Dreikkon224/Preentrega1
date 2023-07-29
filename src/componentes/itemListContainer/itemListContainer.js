@@ -14,8 +14,8 @@ const ItemListContainer = ({ greeting }) => {
             setLoading(true)
 
         const collectionRef = categoryId
-        ? query(collection(db, 'productos'), where('categoria', '==', categoryId))
-        : collection(db, 'productos')
+        ? query(collection(db, 'Productos'), where('categoria', '==', categoryId))
+        : collection(db, 'Productos')
 
         getDocs(collectionRef)
             .then(response => {
@@ -31,11 +31,12 @@ const ItemListContainer = ({ greeting }) => {
             .finally(() => {
                 setLoading(false)
             })
-    }, [ loading, categoryId])
+    }, [categoryId])
 
     return (
         <div>
             <h1>{greeting}</h1>
+            {loading}
             <ItemList products={products}/>
         </div>
     )
