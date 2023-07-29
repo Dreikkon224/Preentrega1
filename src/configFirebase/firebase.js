@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA62ZEFWZjkWFDIFRDgM2TZxNOipcVV-ss",
-  authDomain: "byfana-fd330.firebaseapp.com",
-  projectId: "byfana-fd330",
-  storageBucket: "byfana-fd330.appspot.com",
-  messagingSenderId: "191931388540",
-  appId: "1:191931388540:web:bcca99f3d973b997d1aff9",
-  measurementId: "G-9CE2C52KGD"
+  apiKey: "AIzaSyCjpCNJkv9M1KVmOdlWKd00sUzp1Kg-wj4",
+  authDomain: "byfanb-c45da.firebaseapp.com",
+  projectId: "byfanb-c45da",
+  storageBucket: "byfanb-c45da.appspot.com",
+  messagingSenderId: "261149027856",
+  appId: "1:261149027856:web:a764ee0e4c6f0d5cf3e495",
+  measurementId: "G-30JND976BS"
 };
 
 

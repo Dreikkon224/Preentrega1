@@ -1,10 +1,21 @@
-.ListGroup{
+.Lista{
     display: flex;
-    justify-content: space-around;
+}
+.ListGroup{
+    display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 24px 40px; 
+  grid-template-areas: 
+    ". . ."
+    ". . ."
+    ". . .";
 }
 .CardItem{
     background: radial-gradient(circle, rgba(55,132,247,1) 0%, rgba(144,8,231,1) 100%);
     border-radius: 26px;
+    width: 388px;
+    margin-left: 221px;
 }
 .Header{
     padding: 10px 10px 0px 10px;
@@ -13,4 +24,5 @@
     margin: 18px;
     width: 281px;
     height: 361px;
+    border-radius: 6%;
 }

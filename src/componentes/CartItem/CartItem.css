@@ -1,0 +1,10 @@
+.CartList{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    background: linear-gradient(191deg, rgba(67,138,245,1) 0%, rgba(110,0,175,1) 70%);
+    border-radius: 26px;
+}
+.texto{
+    margin-top: 151px;
+}

@@ -1,20 +1,20 @@
 import { Link } from "react-router-dom"
 
 
-const Item = ({id, name, img, price, stock}) => {
+const Item = ({id, nombre, imagen, precio, stock}) => {
     return ( 
         <article className="CardItem">
             <header className="Header">
                 <h2 className="ItemHeader">
-                    {name}
+                    {nombre}
                 </h2>
             </header>
             <picture>
-                <img src={img} alt={name} className="itemImg"/>
+                <img src={imagen} alt={nombre} className="itemImg"/>
             </picture>
             <section>
                 <p className="Info">
-                    precio: ${price}
+                    precio: ${precio}
                 </p>
                 <p className="Info">
                     stock disponible: {stock}

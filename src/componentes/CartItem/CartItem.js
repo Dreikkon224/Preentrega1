@@ -1,16 +1,18 @@
+import "./CartItem.css"
 import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 
-const CartItem = ({ id, name, quantity, price }) => {
+const CartItem = ({ id, nombre, quantity, precio, imagen }) => {
     const {removeProducto} = useContext(CartContext);
-    const subTotal = price*quantity
+    const subTotal = precio*quantity
     return ( 
-        <div>
-            <h2>titulo:{name}</h2>
-            <p>cantidad:{quantity}</p>
-            <p>precion:$ {price}</p>
-            <p>subtotal:$ {subTotal}</p>
-            <button onClick={() => removeProducto(id)}>Eliminar</button>
+        <div className='CartList'>
+            <h2 className="texto">titulo:{nombre}</h2>
+            <img src={imagen} alt={nombre} className="itemImg"></img>
+            <p className="texto">cantidad:{quantity}</p>
+            <p className="texto">precion:$ {precio}</p>
+            <p className="texto">subtotal:$ {subTotal}</p>
+            <button type="button" class="btn btn-danger" height={200} onClick={() => removeProducto(id)}>[X]</button>
         </div>
     )
 }
