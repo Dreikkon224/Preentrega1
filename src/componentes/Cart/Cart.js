@@ -21,6 +21,6 @@ const Cart = () => {
             <Link to='/checkout' className="Option">Checkout</Link>
         </div>
     )
-}
+} 
 
 export default Cart

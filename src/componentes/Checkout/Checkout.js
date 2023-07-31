@@ -47,6 +47,8 @@ const Checkout = () => {
                 const orderRef = collection(db, 'orders')
                 const orderAdded = await addDoc(orderRef, objOrder)
 
+                
+
                 setOrderId(orderAdded.id)
                 clearCart()
             } else {

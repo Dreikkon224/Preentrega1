@@ -16,5 +16,5 @@ const CartItem = ({ id, nombre, quantity, precio, imagen }) => {
         </div>
     )
 }
- 
+
 export default CartItem;

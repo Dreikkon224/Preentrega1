@@ -20,13 +20,9 @@ export const CartProvider = ({ children }) => {
         setCart(cartUpdated)
     }
 
-    const clearCart = () => {
-        setCart([])
-    }
+    const clearCart = () => { setCart([]) }
 
-    const isInCart = (itemId) => {
-        return cart.some(prod => prod.id === itemId)
-    }
+    const isInCart = (itemId) => { return cart.some(prod => prod.id === itemId) }
 
     const total = cart.reduce((total, item) => total + item.precio * item.quantity, 0)
 
