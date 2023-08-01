@@ -1,3 +1,4 @@
+import './CheckoutForm.css'
 import { useState } from "react";
 
 const CheckoutForm = ({ onConfirm }) => {
@@ -17,19 +18,16 @@ const CheckoutForm = ({ onConfirm }) => {
         <div className="container">
             <form onSubmit={handleConfirm} className="Form">
                 <label className="Label">
-                    Nombre
-                    <input className="Input" type="text" value={nombre} onChange={({ target }) => setName(target.value)}/>
+                    <input class="form-control me-2" placeholder="Nombre" aria-label="Search" type="text" value={nombre} onChange={({ target }) => setName(target.value)}/>
                 </label>
                 <label className="Label">
-                    Telefono
-                    <input className="Input" type="text" value={telefono} onChange={({ target }) => setPhone(target.value)}/>
+                    <input className="Input" class="form-control me-2" placeholder="Telefono" aria-label="Search" type="text" value={telefono} onChange={({ target }) => setPhone(target.value)}/>
                 </label>
                 <label className="Label">
-                    email
-                    <input className="Input" type="text" value={email} onChange={({ target }) => setEmail(target.value)}/>
+                    <input className="Input" class="form-control me-2" placeholder="Email" aria-label="Search" type="text"  value={email} onChange={({ target }) => setEmail(target.value)}/>
                 </label>
                 <div className="Label">
-                    <button type='submit' className="Button">Crear Orden</button>
+                    <button type='submit' class="btn btn-success">Crear Orden</button>
                 </div>
             </form>
         </div>

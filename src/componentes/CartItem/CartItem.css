@@ -1,4 +1,5 @@
 .CartList{
+    margin-top: 1rem;
     display: flex;
     justify-content: space-around;
     margin-bottom: 2rem;
@@ -6,5 +7,16 @@
     border-radius: 26px;
 }
 .texto{
-    margin-top: 151px;
+    margin-top: 78px;
+}
+.CartList i{
+    font-size: 45px;
+    color: red;
+    margin-top: 8rem;
+}
+.imagenItem{
+    margin: 18px;
+    width: 130px;
+    height: 155px;
+    border-radius: 6%;
 }

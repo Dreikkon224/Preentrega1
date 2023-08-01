@@ -17,8 +17,11 @@
   padding: 0;
   list-style: none;
 }
+
 .navegador{
   border: solid;
+  background: rgb(90,170,223);
+  background: radial-gradient(circle, rgba(90,170,223,0.5172443977591037) 16%, rgba(62,63,183,1) 33%, rgba(64,60,183,1) 35%, rgba(110,0,175,1) 81%);
 }
 .categorias{
   display: flex;
@@ -27,13 +30,6 @@
   padding: 14px 0px 14px 0px;
 }
 
-.carrito{
-  display: flex;
-}
-.img{
-  height: 28px;
-  width: 52px;
-}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

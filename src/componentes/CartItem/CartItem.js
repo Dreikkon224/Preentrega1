@@ -8,11 +8,11 @@ const CartItem = ({ id, nombre, quantity, precio, imagen }) => {
     return ( 
         <div className='CartList'>
             <h2 className="texto">titulo:{nombre}</h2>
-            <img src={imagen} alt={nombre} className="itemImg"></img>
+            <img src={imagen} alt={nombre} className="imagenItem"></img>
             <p className="texto">cantidad:{quantity}</p>
             <p className="texto">precion:$ {precio}</p>
             <p className="texto">subtotal:$ {subTotal}</p>
-            <button type="button" class="btn btn-danger" height={200} onClick={() => removeItem(id)}>[X]</button>
+            <i type="button" class="bi bi-cart-x" height={200} onClick={() => removeItem(id)}></i>
         </div>
     )
 }
